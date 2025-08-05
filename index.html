@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Restaurant les LYCO </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <!--1. Barre de navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand " href="#">
+                Restaurant les LYCO
+            </a>
+            <button class="navbar-toggler" type="button" data -bs-toggle="collapse"data-bs-target="navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a class=" nav-link active" href="#">
+                  Acceuil
+                </a>
+              </li>
+                <li class="nav-item">
+                    <a  class=" nav-link " href="#menu">
+                        Menu
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a  class=" nav-link " href="# Apropos">
+                        A propos
+                    </a>
+                </li>
+                <li class="nav-item" >
+                    <a class=" nav-link " href="#contacts">
+                        Contacts
+                    </a>
+                </li>
+            </ul>
+         </div>
+        </div>
+     </nav>
+     <!--2. Section-Hero-->
+     
+      <header class="hero d-flex align-items-center text-white text-center">
+        <div class="container">
+            <h1 class="display-4">
+                Bienvenue au restaurant les LYCO
+            </h1>
+          <p class="lead">
+            Une expérience culinaire inoubliable 
+         </p> 
+         <a href="#menu" class="btn btn-outline-light">
+            Découvrir le menu
+         </a>
+        </div>
+    </header>
+
+  
+     <!--Section-Menu-->
+     <section id="menu" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">
+           Notre Menu
+        </h2>
+        <div class="menu-scroll d-flex overflow-auto gap-4 px-3">        
+          <!--plat1-->
+          <div class="card-flex-shrink-0 d-flex flex-column align-items-center" style="width: 30%;">
+            <img src="image-restau2.jpg"  class="card-img-top plat-img" alt="Garba Choco">
+            <div class="card-body text-center">
+              <h5 class="card-title">
+                  Garba Choco
+              </h5>
+              <p class="card-text">
+                un tilapia braisé accompagné du généreuse portion d attiéké et alloco plus une délicieuse sauce moyo bien relevé
+              </p>
+              <p class="fw-bold text-success">
+                à seulement 6000 francs
+              </p>
+            </div>
+          </div>
+          <!--plat2-->
+          <div class="card-flex-shrink-0 d-flex flex-column align-items-center" style="width: 30%;">
+          <img src="image-restau3.jpg" class="card-img-top plat-img" alt="dibi poulet et des frites épicés" >
+          <div class="card-body text-center">
+            <h5 class="card-title">
+              dibi poulet
+            </h5> 
+            <p class="card-text">
+              une généreuse portion de poulet dibi,avec sa sauce vert ,accompagné d une portion de frite,attiéké,alloco,potatoes, au choix
+            </p>
+            <p class="fw-bold text-success">
+              à 8000 francs
+            </p>
+          </div>
+          </div>
+          <!--plat3-->
+          <div class="card-flex-shrink-0 d-flex flex-column align-items-center" style="width: 30%;">
+            <img src="image-restau4.jpg" class=" card-img-top plat-img" alt=" Mangonada">
+            <div class="card-body text-center">
+              <h5 class="card-title">
+                Mangonada
+              </h5>
+              <p class="card-text"> u
+                une éxplosition se saveurs et de fraicheurs
+              </p>
+              <p class="fw-bold text-success">
+                à 3000 francs
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+     </section>
+
+       <!--Section A propos de nous -->
+       <section id="about" class="py-5 bg- light">
+      <div class="container">
+        <div class="row align-items-center">
+            <div class="cold-md-6">
+            <h2 class="section title">
+            A propos de nous 
+            </h2>
+            <p>
+                Nous sommes passionnées par la cuisine africainne
+            </p>
+            <img src="image-restau6.jpg" class="img- fluid rounded" alt="restaurant">
+          </div>
+        </div>
+      </div>
+       </section>
+
+       <!--section contact-->
+       <section id="contact--" class="py-5">
+        <div class="container">
+      <h2 class="section title">
+           Contactez-nous  
+      </h2>
+       <p>
+             Venez-passez un merveilleux moment en fammille, et entre amis, dans un cadre conviale ,et jovial.
+       </p>
+        </div>
+        <form action="traitement.php" method="post"> 
+            <label for="nom">Nom</label>
+            <input type="text"  name=" Nom" id=" Nom" required>
+          <br>
+          <label for="email">Email</label>
+          <input type="email" name=" Email" id="Email" required>
+          <br>
+          <label for="mdp">Mot de passe</label>
+          <input type="mdp" name="Mot de passe" id=" Mot de passe" required>
+          <fieldset>
+            <label for="recervez">Recervez une table :</label>
+            <input type="radio" id="oui" name="table" value="oui" checked>
+            <label for="oui">Oui</label>
+            <input type="radio" id="non" name="table" value="non">
+            <label for="non">Non</label>
+          </fieldset>
+          <button type="submit">
+        Reserver une table 
+          </button>
+          <button type="reset">
+         Annuler la réservation 
+          </button>
+        </form>
+       </section>
+
+       <!--Pied de page-->
+       <footer class="footer bg-dark text-white">
+     <p>&copy; 2025 restaurant Les LYCO</p>
+     <p>
+        <a href="#">facebook</a>
+        <a href="#">snapchat</a>
+        <a href="#">instagram</a>
+        Créer par Anna
+     </p>
+       </footer>
+
+</body>
+</html>
