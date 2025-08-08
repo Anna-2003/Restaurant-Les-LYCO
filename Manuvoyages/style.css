@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;/*noir transparent*/
+    background-color:beige;
+    font-family: Arial, 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+body.bdy {
+    background-color:bisque;
+}
+
+.hero-image{
+    height: 150vh;
+    width: 100%;
+    background-image: url('hero.jpg4.jpg');
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.navbar{
+    background-color:bisque;
+    box-shadow: 02px 4px rgba (0,0,0,0,1);
+}
+.navbar.nav-link{
+    color: maroon;
+    font-weight: bold;
+}
+.navbar.nav-link:hover{
+    text-decoration: underline;
+}
+.dropdown-menu.dropdown-item:hover{
+    background-color: bisque;
+}
+    
+.btn-pays:hover{
+    background-color: gray;
+}
+
+.hero-overlay{
+    position: absolute;
+    top: 0;left: 0;right: 0;bottom: 0;
+    background-color: rgba(0,0,0,0,4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-overlay h1{
+    color:grey;
+    font-size: 2,5rem;
+    text-align: center;
+}
+.form-section{
+    background-color:whitesmoke;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.avis-card{
+    background-color:bisque;
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 02px 4px rgba(0,0,0,0,1);
+}
+/*--- SECTION DESTINATIONS---*/
+
+.destination{
+    text-align: center;
+    padding: 40px 20px;
+    background-color: grey;
+}
+
+.destination-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.destination-item{
+    width: 250px;
+}
+
+.destination-item img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(red, green, blue, alpha);
+}
+.destination-item h3{
+    margin-top: 10px;
+    color: whitesmoke;
+}
+
+.destination-item p{
+    font-size: 14px;
+    color:black;
+}
